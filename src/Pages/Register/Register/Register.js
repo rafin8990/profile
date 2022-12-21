@@ -69,11 +69,10 @@ const Register = () => {
                     </div>
                     <div className=" mt-6">
                         <button type='submit' className="btn btn-outline btn-success w-full">Sign UP</button>
-
+                        <button onClick={handleGoogle} className="btn btn-success w-full mt-2">Sign UP with google</button>
                     </div>
                     <p className='mt-5'>Already have an account? <Link to='/login'> <span className='text-success'>Please Login</span></Link></p>
                 </form>
-                <button onClick={handleGoogle} className="btn btn-success w-full mt-2">Sign UP with google</button>
             </div>
             <div className=' lg:w-1/2 order-first md:order-2'>
                 <img src={registerpic} alt="" />
