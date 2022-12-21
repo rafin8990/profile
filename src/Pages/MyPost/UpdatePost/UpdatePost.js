@@ -25,7 +25,7 @@ import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
             userName: user?.displayName,
             time: time,
         }
-         fetch(`http://localhost:5000/posts/${id}`, {
+         fetch(`https://profile-server-ten.vercel.app/posts/${id}`, {
             method:'PUT',
             headers:{
                 'content-type':'application/json'

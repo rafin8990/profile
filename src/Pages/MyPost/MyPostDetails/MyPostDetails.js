@@ -18,7 +18,7 @@ setId(id)
     const handleDelete = id => {
         const proceed = window.confirm('Are You Sure to delete this')
         if (proceed) {
-            fetch(`http://localhost:5000/posts/${id}`, {
+            fetch(`https://profile-server-ten.vercel.app/posts/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

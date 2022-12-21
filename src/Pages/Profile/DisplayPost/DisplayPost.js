@@ -7,7 +7,7 @@ const DisplayPost = () => {
     const { user } = useContext(AuthContext)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/posts?email=${user?.email}`)
+        fetch(`https://profile-server-ten.vercel.app/posts?email=${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setPosts(data)

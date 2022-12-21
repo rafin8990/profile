@@ -25,7 +25,7 @@ const PostModal = () => {
             userName:user?.displayName,
             time: time,
         }
-        fetch('http://localhost:5000/posts',{
+        fetch('https://profile-server-ten.vercel.app/posts',{
             method:'POST',
             headers:{
                 'content-type':'application/json'
