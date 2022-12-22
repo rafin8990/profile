@@ -4,7 +4,7 @@ import HomePostDetails from '../HomePostDetails/HomePostDetails';
 const HomePost = () => {
     const [allPost, setAllPost]=useState([])
     useEffect(()=>{
-        fetch('https://profile-server-ten.vercel.app/posts')
+        fetch('https://profile-server-ten.vercel.app/post')
         .then(res=>res.json())
         .then(data=>{
             setAllPost(data)
